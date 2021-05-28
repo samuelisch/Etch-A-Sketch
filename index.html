@@ -9,39 +9,41 @@
     <body>
         <div class="wrapper">
             <head>
-                <h1>Etch-A-Sketch!</h1>
+                <h1>Etch-A-Sketch</h1>
                 <p>Choose your style and have a go</p>
             </head>
             
             <main>
                 <div class="buttons-bar">
-                    <div class="color-select">
-                        <div class="color-circle"></div>
-                        <select type="select" class="selection">
-                            <option id="black">Black</option>
-                            <option id="red">Red</option>
-                            <option id="green">Green</option>
-                            <option id="blue">Blue</option>
-                            <option id="yellow">Yellow</option>
-                            <option id="orange">Orange</option>
-                            <option id="purple">Purple</option>
-                        </select>
+                    <div class="button-container">
+                        <div class="color-select">
+                            <div class="color-circle"></div>
+                            <select type="select" class="btn selection">
+                                <option value="black" selected>Black</option>
+                                <option value="red">Red</option>
+                                <option value="green">Green</option>
+                                <option value="blue">Blue</option>
+                                <option value="yellow">Yellow</option>
+                                <option value="orange">Orange</option>
+                                <option value="purple">Purple</option>
+                            </select>
+                        </div>
 
                     <button class="btn color random">Random</button>
                     <button class="btn color greyscale">Greyscale</button>
                     </div>
 
-                    <button class="btn reset">Clear</button>
+                    <button class="btn clear">Clear</button>
+                    <button class="btn erase">Eraser</button>
 
                     <select class="btn size">
-                        <option id="1">1x1</option>
-                        <option id="2">2x2</option>
-                        <option id="4">4x4</option>
-                        <option id="8">8x8</option>
-                        <option id="16">16x16</option>
-                        <option id="32">32x32</option>
-                        <option id="64">64x64</option>
-                        <option id="128">128x128</option>
+                        <option value="1">1x1</option>
+                        <option value="2">2x2</option>
+                        <option value="4">4x4</option>
+                        <option value="8" selected>8x8</option>
+                        <option value="16">16x16</option>
+                        <option value="32">32x32</option>
+                        <option value="64">64x64</option>
                     </select>
                 </div>
 

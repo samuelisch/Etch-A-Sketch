@@ -36,6 +36,74 @@ main {
     justify-content: space-around;
 }
 
+.button-container {
+    display: flex;
+}
+
+.color-select {
+    background-color: rgb(241, 241, 243);
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+}
+
+.color-select:hover {
+    background-color: rgb(58, 58, 58);
+}
+
+.color-select:hover .selection {
+    background-color: rgb(58, 58, 58);
+    color:rgb(227, 227, 228)
+}
+
+.color-circle {
+    height: 1rem;
+    width: 1rem;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.btn {
+    background-color: rgb(241, 241, 243);
+    border: none;
+    margin: .1rem .5rem;
+}
+
+.btn:hover {
+    background-color:rgb(58, 58, 58);
+    color:rgb(227, 227, 228);
+}
+
+.random-color {
+    background-color: red;
+    color:rgb(247, 247, 247);
+}
+
+.random-color:hover {
+    background-color: red;
+    color:rgb(58, 58, 58);
+}
+
+.greyscale-color {
+    background-color: #999999;
+    color: white;
+}
+
+.greyscale-color:hover {
+    background-color: #999999;
+    color:rgb(58, 58, 58);
+}
+
+.eraser {
+    background-color: darkcyan;
+    color: white;
+}
+
+.eraser:hover {
+    background-color: darkcyan;
+    color: black;
+}
+
 .box-wrapper {
     margin-top: 1rem;
     display: flex;
@@ -46,4 +114,9 @@ main {
     border: 10px solid rgb(58, 58, 58);
     height: 45rem;
     width: 45rem;
+    display: grid;
+}
+
+.cell {
+    background-color: rgb(247, 247, 247);
 }

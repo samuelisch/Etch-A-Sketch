@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Etch-A-Sketch</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <head>
+                <h1>Etch-A-Sketch!</h1>
+                <p>Choose your style and have a go</p>
+            </head>
+            
+            <main>
+                <div class="buttons-bar">
+                    <div class="color-select">
+                        <div class="color-circle"></div>
+                        <select type="select" class="selection">
+                            <option id="black">Black</option>
+                            <option id="red">Red</option>
+                            <option id="green">Green</option>
+                            <option id="blue">Blue</option>
+                            <option id="yellow">Yellow</option>
+                            <option id="orange">Orange</option>
+                            <option id="purple">Purple</option>
+                        </select>
+
+                    <button class="btn color random">Random</button>
+                    <button class="btn color greyscale">Greyscale</button>
+                    </div>
+
+                    <button class="btn reset">Clear</button>
+
+                    <select class="btn size">
+                        <option id="1">1x1</option>
+                        <option id="2">2x2</option>
+                        <option id="4">4x4</option>
+                        <option id="8">8x8</option>
+                        <option id="16">16x16</option>
+                        <option id="32">32x32</option>
+                        <option id="64">64x64</option>
+                        <option id="128">128x128</option>
+                    </select>
+                </div>
+
+                <div class="box-wrapper">
+                    <div class="sketch-box"></div>
+                </div>
+            </main>
+        </div>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>

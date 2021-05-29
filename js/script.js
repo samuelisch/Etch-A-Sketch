@@ -16,6 +16,7 @@ sizeSelected();
 let randomColor = false;
 let greyScaleColor = false;
 let eraser = false;
+let isDrawing = false;
 
 //event for changing select node for color
 function colorSelected() {
@@ -51,6 +52,8 @@ function addCellListener() {
 
 //event function for changing cell color after event.
 function changeCellColor() {
+    if (!isDrawing) return;
+
     if (greyScaleColor) {
         this.style.backgroundColor = greyScale(this.style.backgroundColor);
         console.log(this.style.backgroundColor);
@@ -155,6 +158,16 @@ function greyScale(color) {
     }
 }
 
+function toggleDrawing(e) {
+    if (e.code == 'KeyD') {
+        if (!isDrawing) {
+            isDrawing = true;
+        } else {
+            isDrawing = false;
+        }
+    }
+}
+
 cells.forEach(cell => cell.addEventListener('mouseover', changeCellColor));
 colorSelect.addEventListener('change', colorSelected);
 sizeSelect.addEventListener('change', sizeSelected);
@@ -162,3 +175,4 @@ clearGrid.addEventListener('click', resetGrid);
 randomBtn.addEventListener('click', randomColorSelect);
 greyScaleBtn.addEventListener('click', greyScaleColorSelect);
 eraseBtn.addEventListener('click', eraserSelect);
+window.addEventListener('keypress', toggleDrawing);

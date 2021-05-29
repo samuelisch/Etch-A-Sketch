@@ -24,6 +24,9 @@ h1 {
 
 h1 ~ p {
     font-size: 1.5rem;
+}
+
+.prompt {
     margin-bottom: 5rem;
 }
 
